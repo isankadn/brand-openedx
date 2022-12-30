@@ -1,5 +1,6 @@
 // Use this file to set SASS variables for @edx/paragon
 // See _variables.scss in https://github.com/openedx/paragon/blob/master/scss/core/ for reference
+@import "exports.module.scss";
 
 // Color system
 $white:    #FFFFFF !default;
@@ -51,9 +52,9 @@ $colors: map-merge(
   $colors
 );
 
-$primary: #0A3055 !default;
+$primary: #0069B4 !default;
 $secondary: $gray-700 !default;
-$brand: #9D0054 !default;
+$brand: #0A6C35 !default;
 $success: $green !default;
 $info: $teal !default;
 $danger: $red !default;
@@ -62,3 +63,4 @@ $light: #E1DDDB !default;
 $dark: #273F2F !default;
 $accent-a: #00BBF9 !default;
 $accent-b: #FFEE88 !default;
+
