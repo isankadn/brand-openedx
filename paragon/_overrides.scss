@@ -17,6 +17,9 @@
 #root .learning-header a[href="https://support.edx.org"] {
     display: none;
 }
+#root .learning-header a[href="null"] {
+    display: none;
+}
 #root .footer{
     position: fixed;
     bottom: 0;
