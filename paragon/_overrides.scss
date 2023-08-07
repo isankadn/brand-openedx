@@ -14,3 +14,12 @@
 #root .user-dropdown .btn-outline-primary{
     background-color: #fff;
 }
+#root .learning-header a[href="https://support.edx.org"] {
+    display: none;
+}
+#root .footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+   
+}  
