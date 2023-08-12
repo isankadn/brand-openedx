@@ -1,28 +1,103 @@
+@import url('http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css');
 // Use this file to define style overrides for @edx/paragon
 // This file is included after all Paragon styles, but should generally avoid using private mixins in Paragon.
-#root header .logo{
+#root header .logo {
     height: 3rem;
 }
 
 #root footer {
     background-color: #0a1c3d;
 }
-#root .learning-header{
+
+#root .site-header-desktop,
+#root .learning-header {
     background-color: #0a1c3d;
     color: #fff;
 }
-#root .user-dropdown .btn-outline-primary{
+
+#root .user-dropdown .btn-outline-primary {
     background-color: #fff;
 }
+
 #root .learning-header a[href="https://support.edx.org"] {
     display: none;
 }
+
 #root .learning-header a[href="null"] {
     display: none;
 }
-#root .footer{
-    position: fixed;
+
+#root .footer {
     bottom: 0;
     width: 100%;
-   
-}  
+
+}
+#root .profile-page,
+#root #main-content {
+  
+}
+#root main,
+#root .profile-page .container-fluid,
+#root .site-header-desktop>div,
+#root .footer>div {
+    max-width: 1600px;
+    margin: auto;
+}
+
+.site-header-desktop .main-nav .nav-link,
+.site-header-desktop .main-nav .pgn__tab_more.nav-link.active .dropdown .dropdown-toggle,
+.pgn__tab_more.nav-link.active .dropdown .site-header-desktop .main-nav .dropdown-toggle {
+    color: #fff;
+}
+#root .site-header-desktop .main-nav .nav-link:hover{
+    color: #fff;
+}
+#root .site-header-desktop .secondary-menu-container button{
+    color: #fff;
+}
+#root .user-dropdown .btn-outline-primary,
+#root .site-header-desktop .secondary-menu-container button:focus:not(:focus-visible) {
+    color: #fff;
+    background-color: #0a1c3d  ;
+}
+#root header .logo img,
+#root .site-header-desktop .logo img{
+    height: 112px;
+    padding-top: 12px;
+}
+#root header .logo {
+    height: 125px;
+    padding: 0 !important;
+}
+#root .user-dropdown .dropdown-toggle::after{
+    margin-left: 0.5em !important;
+}
+
+#root main #delete-account{
+    display: none !important;
+}
+#root a[href="/account/#delete-account"] {
+    display: none;
+}
+#root main::after{
+    content: "";
+    display: block;
+    height: 100px;
+}
+
+#root .site-header-mobile img{
+    height: 122px;
+    padding: 10px;
+}
+#root .site-header-mobile{
+    height: 125px;
+    background-color: #0a1c3d;
+    color: #fff;
+}
+#root .site-header-mobile header .logo {
+    height: 125px;
+    padding: 0 !important;
+}
+#root .site-header-mobile .icon-button {
+   color: #fff;
+}
